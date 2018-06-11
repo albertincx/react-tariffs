@@ -13,4 +13,4 @@ start dev:
 `$ npm run start`
 
 ## Demo
-http://tmid.ru/go.php?cat=sknt
+safiullin.io/tariffs
