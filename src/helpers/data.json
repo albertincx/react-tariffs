@@ -1,0 +1,244 @@
+{
+  "result": "ok",
+  "tariffs": [
+    {
+      "title": "Earth",
+      "tariffs": [
+        {
+          "ID": 2,
+          "title": "Earth (3 months)",
+          "price": 1350,
+          "price_add": 0,
+          "pay_period": "3",
+          "new_payday": "1452891600+0300",
+          "speed": 50
+        },
+        {
+          "ID": 1,
+          "title": "Earth",
+          "price": 480,
+          "price_add": 0,
+          "pay_period": "1",
+          "new_payday": "1450213200+0300",
+          "speed": 50
+        },
+        {
+          "ID": 3,
+          "title": "Earth (6 months)",
+          "price": 2460,
+          "price_add": 0,
+          "pay_period": "6",
+          "new_payday": "1460754000+0300",
+          "speed": 50
+        },
+        {
+          "ID": 4,
+          "title": "Earth (12 months)",
+          "price": 4200,
+          "price_add": 0,
+          "pay_period": "12",
+          "new_payday": "1476565200+0300",
+          "speed": 50
+        }
+      ],
+      "link": "/tariffi_internet/in/1.htm",
+      "speed": 50,
+      "price_add": 0
+    },
+    {
+      "title": "Water",
+      "tariffs": [
+        {
+          "ID": 5,
+          "title": "Water",
+          "price": 600,
+          "price_add": 0,
+          "pay_period": "1",
+          "new_payday": "1450213200+0300",
+          "speed": 100
+        },
+        {
+          "ID": 6,
+          "title": "Water (3 months)",
+          "price": 1650,
+          "price_add": 0,
+          "pay_period": "3",
+          "new_payday": "1452891600+0300",
+          "speed": 100
+        },
+        {
+          "ID": 7,
+          "title": "Water (6 months)",
+          "price": 3060,
+          "price_add": 0,
+          "pay_period": "6",
+          "new_payday": "1460754000+0300",
+          "speed": 100
+        },
+        {
+          "ID": 8,
+          "title": "Water (12 months)",
+          "price": 5400,
+          "price_add": 0,
+          "pay_period": "12",
+          "new_payday": "1476565200+0300",
+          "speed": 100
+        }
+      ],
+      "link": "/tariffi_internet/in/2.htm",
+      "speed": 100,
+      "price_add": 0,
+      "free_options": [
+        "TV complect \"TV\"",
+        "Antivirus Agnitum Outpost"
+      ]
+    },
+    {
+      "title": "Fire",
+      "tariffs": [
+        {
+          "ID": 9,
+          "title": "Fire",
+          "price": 800,
+          "price_add": 0,
+          "pay_period": "1",
+          "new_payday": "1450213200+0300",
+          "speed": 200
+        },
+        {
+          "ID": 10,
+          "title": "Fire (3 months)",
+          "price": 2250,
+          "price_add": 0,
+          "pay_period": "3",
+          "new_payday": "1452891600+0300",
+          "speed": 200
+        },
+        {
+          "ID": 11,
+          "title": "Fire (6 months)",
+          "price": 4260,
+          "price_add": 0,
+          "pay_period": "6",
+          "new_payday": "1460754000+0300",
+          "speed": 200
+        },
+        {
+          "ID": 12,
+          "title": "Fire (12 months)",
+          "price": 7800,
+          "price_add": 0,
+          "pay_period": "12",
+          "new_payday": "1476565200+0300",
+          "speed": 200
+        }
+      ],
+      "link": "/tariffi_internet/in/3.htm",
+      "speed": 200,
+      "price_add": 0,
+      "free_options": [
+        "TV complect \"TV\"",
+        "Antivirus Agnitum Outpost",
+        "Domain name in test.ru zone"
+      ]
+    },
+    {
+      "title": "Water HD",
+      "tariffs": [
+        {
+          "ID": 13,
+          "title": "Water HD",
+          "price": 800,
+          "price_add": 0,
+          "pay_period": "1",
+          "new_payday": "1450213200+0300",
+          "speed": 100
+        },
+        {
+          "ID": 14,
+          "title": "Water HD (3 months)",
+          "price": 2250,
+          "price_add": 0,
+          "pay_period": "3",
+          "new_payday": "1452891600+0300",
+          "speed": 100
+        },
+        {
+          "ID": 15,
+          "title": "Water HD (6 months)",
+          "price": 4260,
+          "price_add": 0,
+          "pay_period": "6",
+          "new_payday": "1460754000+0300",
+          "speed": 100
+        },
+        {
+          "ID": 16,
+          "title": "Water HD (12 months)",
+          "price": 7800,
+          "price_add": 0,
+          "pay_period": "12",
+          "new_payday": "1476565200+0300",
+          "speed": 100
+        }
+      ],
+      "link": "/sky-tv/in/2.htm",
+      "speed": 100,
+      "price_add": 0,
+      "free_options": [
+        "TV complect \"TV\"",
+        "Antivirus Agnitum Outpost",
+        "Domain name in test.ru zone"
+      ]
+    },
+    {
+      "title": "Fire HD",
+      "tariffs": [
+        {
+          "ID": 17,
+          "title": "Fire HD",
+          "price": 1000,
+          "price_add": 0,
+          "pay_period": "1",
+          "new_payday": "1450213200+0300",
+          "speed": 200
+        },
+        {
+          "ID": 18,
+          "title": "Fire HD (3 months)",
+          "price": 2700,
+          "price_add": 0,
+          "pay_period": "3",
+          "new_payday": "1452891600+0300",
+          "speed": 200
+        },
+        {
+          "ID": 19,
+          "title": "Fire HD (6 months)",
+          "price": 5160,
+          "price_add": 0,
+          "pay_period": "6",
+          "new_payday": "1460754000+0300",
+          "speed": 200
+        },
+        {
+          "ID": 20,
+          "title": "Fire HD (12 months)",
+          "price": 9600,
+          "price_add": 0,
+          "pay_period": "12",
+          "new_payday": "1476565200+0300",
+          "speed": 200
+        }
+      ],
+      "link": "/sky-tv/in/3.htm",
+      "speed": 200,
+      "price_add": 0,
+      "free_options": [
+        "TV complect \"TV\"",
+        "Antivirus Agnitum Outpost",
+        "Domain name in test.ru zone"
+      ]
+    }
+  ]
+}

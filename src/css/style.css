@@ -1,0 +1,237 @@
+@charset "UTF-8";
+body {
+  max-width: 1024px;
+  margin: 0 auto;
+  background: #EEEFF3;
+  font-family: "andale mono", "monotype.com", monaco, "courier new", courier, monospace;
+}
+@media only screen and (min-width: 1280px) {
+  body {
+    max-width: 1280px;
+  }
+}
+@media only screen and (min-width: 1440px) {
+  body {
+    max-width: 1440px;
+  }
+}
+
+* {
+  margin: 0;
+}
+
+.header {
+  box-shadow: 0 3px 1px -2px rgba(0, 0, 0, 0.2), 0 2px 2px 0 rgba(0, 0, 0, 0.14), 0 1px 5px 0 rgba(0, 0, 0, 0.12);
+  margin-bottom: 25px;
+  padding: 5px 15px;
+  background: #fbfbfb;
+}
+.header .back {
+  cursor: pointer;
+  overflow: hidden;
+  display: flex;
+  text-align: center;
+  align-items: center;
+}
+.header .back .icon {
+  width: 18px;
+  height: 30px;
+  float: left;
+  background: url("data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAADIAAAAyCAYAAAAeP4ixAAAAAXNSR0IArs4c6QAAAARnQU1BAACxjwv8YQUAAAAJcEhZcwAADsMAAA7DAcdvqGQAAAESSURBVGhD7dcxSgNBFMbx1WCVG1ikcwYjpPEEguAJ0unOJIitbbqcIGBjEcTKVJudxdaj2FjnAgGbJL6EhwTZpPV74fvBQNj3ivzZ3WIzoh2Gw2P9ZdQqO/IpjOR8uxQ//Xvf68QQiXApvPoqrn5PCm86NaIuYnPCi24YIO9DbUSKX/JoneoWuD0R7eKupVvgGIGCESgYgYIRKBiBghEoGIHiICKERDyZj+h83Dblc3SxHSFhM1MRG0W3sf7j2yFyN5YuxXvdsMOX+ZXEzA8i5qzsXTMGEWNQMQYVY1AxBhVjUDEGFWNQ7YrxZbzRFTvqYlwVJzq25W+Mq8JAR/acT/MLX4VnCXm8HD+c6GWi/5dlP67PYeYUVEDXAAAAAElFTkSuQmCC") no-repeat 0;
+  background-size: 100%;
+}
+.header .title {
+  display: block;
+  font-size: 1.1rem;
+  font-weight: bold;
+  flex: 1;
+}
+
+.undecor {
+  text-decoration: none;
+}
+
+.tariff-wrap .tariff {
+  position: relative;
+  height: 100%;
+  padding-bottom: 0;
+  margin-bottom: 0;
+  box-shadow: 0 3px 1px -2px rgba(0, 0, 0, 0.2), 0 2px 2px 0 rgba(0, 0, 0, 0.14), 0 1px 5px 0 rgba(0, 0, 0, 0.12);
+  border-bottom: 1px solid #d3d3d3;
+  background: #fff;
+  margin-right: 10px;
+}
+.tariff-wrap .tariff:not(.tariff-item) {
+  padding-left: 15px;
+}
+.tariff-wrap .tariff.tariff-item {
+  padding-left: 15px;
+}
+.tariff-wrap .tariff.tariff-item .tariff-info {
+  padding: 0;
+}
+.tariff-wrap .tariff.tariff-item .tariff-info .prices {
+  border: none;
+}
+.tariff-wrap .tariff .group-name a, .tariff-wrap .tariff .group-name div {
+  display: block;
+  color: #7FBF3C;
+  text-decoration: none;
+  font-size: 1.1rem;
+  border-bottom: 1px solid #d3d3d3;
+  border-width: 0.01em;
+  padding: 8px 0;
+  font-weight: bold;
+}
+.tariff-wrap .tariff .tariff-info {
+  padding: 10px 0;
+  position: relative;
+}
+.tariff-wrap .tariff .tariff-info .speed {
+  color: white;
+  background: #ddd;
+  display: inline-block;
+  margin-left: -15px;
+  padding: 5px 10px 5px 20px;
+}
+.tariff-wrap .tariff .tariff-info .speed.speed50 {
+  background: #716042;
+}
+.tariff-wrap .tariff .tariff-info .speed.speed100 {
+  background: #0075D5;
+}
+.tariff-wrap .tariff .tariff-info .speed.speed200 {
+  background: #EC4817;
+}
+.tariff-wrap .tariff .tariff-info .prices {
+  padding: 10px 0;
+  padding-bottom: 0;
+  color: #494949;
+  font-weight: bold;
+}
+.tariff-wrap .tariff .tariff-info .prices .free {
+  margin-top: 5px;
+  font-size: 0.7rem;
+  font-weight: normal;
+}
+.tariff-wrap .tariff .tariff-info .skidka {
+  color: #494949;
+  padding-bottom: 5px;
+  font-size: 0.8rem;
+}
+.tariff-wrap .tariff .tariff-info .skidka.gray {
+  color: #a8a8a8;
+  border-bottom: 1px solid #d3d3d3;
+  border-width: 0.01em;
+  margin-bottom: 8px;
+}
+.tariff-wrap .tariff .tariff-info:not(.detail):after {
+  content: "›";
+  position: absolute;
+  right: 10px;
+  top: 33%;
+  font-size: 1.3rem;
+  color: #C9C9CE;
+}
+.tariff-wrap .tariff .tariff-info.detail {
+  margin-bottom: 5px;
+}
+.tariff-wrap .tariff .tariff-info.detail .button-wrap {
+  padding-right: 10px;
+}
+.tariff-wrap .tariff .tariff-info.detail .button-wrap .button {
+  cursor: pointer;
+  display: block;
+  background: #7FBF3C;
+  color: white;
+  border: none;
+  padding: 10px;
+  width: 100%;
+}
+.tariff-wrap .tariff .link {
+  border-top: 1px solid #d3d3d3;
+  border-width: 0.01em;
+  bottom: 0;
+  padding: 5px 0;
+}
+.tariff-wrap .tariff .link a {
+  color: cornflowerblue;
+  font-size: 0.7rem;
+  text-decoration: none;
+}
+.tariff-wrap .tariff .link:not(.ph) {
+  position: absolute;
+  width: calc(100% - 15px);
+}
+.tariff-wrap .tariff .link.ph {
+  visibility: hidden;
+}
+
+.results {
+  display: flex;
+  flex-wrap: wrap;
+}
+
+.tariff-wrap {
+  position: relative;
+  margin-bottom: 15px;
+  max-width: 33.3%;
+  flex: 0 0 33.3%;
+}
+
+@media only screen and (max-width: 420px) {
+  .tariff-wrap {
+    max-width: 100%;
+    flex: 0 0 100%;
+  }
+  .tariff-wrap .holder {
+    display: none;
+  }
+  .tariff-wrap:nth-child(even) .tariff {
+    margin-right: 0;
+  }
+  .tariff-wrap .tariff {
+    margin-right: 0;
+  }
+}
+@media only screen and (min-width: 1024px) {
+  .tariff-wrap {
+    max-width: 25%;
+    flex: 0 0 25%;
+  }
+  .tariff-wrap:nth-child(4n) .tariff {
+    margin-right: 0;
+  }
+}
+@media only screen and (min-width: 1280px) {
+  .tariff-wrap {
+    max-width: 20%;
+    flex: 0 0 20%;
+  }
+  .tariff-wrap:nth-child(4n) .tariff {
+    margin-right: 10px;
+  }
+  .tariff-wrap:nth-child(5n) .tariff {
+    margin-right: 0;
+  }
+}
+@media only screen and (min-width: 420px) and (max-width: 639px) {
+  .tariff-wrap {
+    max-width: 50%;
+    flex: 0 0 50%;
+  }
+  .tariff-wrap:nth-child(2n) .tariff {
+    margin-right: 0;
+  }
+}
+@media only screen and (min-width: 640px) and (max-width: 1023px) {
+  .tariff-wrap {
+    max-width: 33.3%;
+    flex: 0 0 33.3%;
+  }
+  .tariff-wrap:nth-child(3n) .tariff {
+    margin-right: 0;
+  }
+}
+
+/*# sourceMappingURL=style.css.map */

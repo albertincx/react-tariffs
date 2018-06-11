@@ -1,0 +1,301 @@
+$font-size: 1.1rem;
+$backIcon: 'data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAADIAAAAyCAYAAAAeP4ixAAAAAXNSR0IArs4c6QAAAARnQU1BAACxjwv8YQUAAAAJcEhZcwAADsMAAA7DAcdvqGQAAAESSURBVGhD7dcxSgNBFMbx1WCVG1ikcwYjpPEEguAJ0unOJIitbbqcIGBjEcTKVJudxdaj2FjnAgGbJL6EhwTZpPV74fvBQNj3ivzZ3WIzoh2Gw2P9ZdQqO/IpjOR8uxQ//Xvf68QQiXApvPoqrn5PCm86NaIuYnPCi24YIO9DbUSKX/JoneoWuD0R7eKupVvgGIGCESgYgYIRKBiBghEoGIHiICKERDyZj+h83Dblc3SxHSFhM1MRG0W3sf7j2yFyN5YuxXvdsMOX+ZXEzA8i5qzsXTMGEWNQMQYVY1AxBhVjUDEGFWNQ7YrxZbzRFTvqYlwVJzq25W+Mq8JAR/acT/MLX4VnCXm8HD+c6GWi/5dlP67PYeYUVEDXAAAAAElFTkSuQmCC';
+$white: #fff;
+$green: #7FBF3C;
+$borderBottom: 1px solid #d3d3d3;
+$flexBoxRight: 10px;
+$xxsmall: 420px;
+$xsmall: 480px;
+$small: 640px;
+$large: 1024px;
+$xlarge: 1280px;
+$xxlarge: 1440px;
+$boxShadow: 0 3px 1px -2px rgba(0, 0, 0, .2), 0 2px 2px 0 rgba(0, 0, 0, .14), 0 1px 5px 0 rgba(0, 0, 0, .12);
+
+@mixin respond-to($media) {
+  @if $media == handhelds {
+    @media only screen and (max-width: $xxsmall) {
+      @content;
+    }
+  } @else if $media == xmedium-screens {
+    @media only screen and (min-width: $xxsmall) and (max-width: $small - 1) {
+      @content;
+    }
+  } @else if $media == medium-screens {
+    @media only screen and (min-width: $small) and (max-width: $large - 1) {
+      @content;
+    }
+  } @else if $media == wide-screens {
+    @media only screen and (min-width: $large) {
+      @content;
+    }
+  } @else if $media == xwide-screens {
+    @media only screen and (min-width: $xlarge) {
+      @content;
+    }
+  } @else if $media == xxwide-screens {
+    @media only screen and (min-width: $xxlarge) {
+      @content;
+    }
+  }
+}
+
+body {
+  max-width: $large;
+  margin: 0 auto;
+  background: #EEEFF3;
+  font-family: "andale mono",
+  "monotype.com",
+  monaco,
+  "courier new", courier,
+  monospace;
+  @include respond-to(xwide-screens) {
+    max-width: $xlarge;
+  }
+  @include respond-to(xxwide-screens) {
+    max-width: $xxlarge;
+  }
+}
+
+* {
+  margin: 0;
+}
+
+.header {
+  box-shadow: $boxShadow;
+  margin-bottom: 25px;
+  padding: 5px 15px;
+  background: #fbfbfb;
+  .back {
+    cursor: pointer;
+    overflow: hidden;
+    display: flex;
+    text-align: center;
+    align-items: center;
+    .icon {
+      width: 18px;
+
+      height: 30px;
+      float: left;
+      background: url($backIcon) no-repeat 0;
+      background-size: 100%;
+    }
+  }
+  .title {
+    display: block;
+    font-size: $font-size;
+    font-weight: bold;
+    flex: 1;
+  }
+}
+
+.undecor {
+  text-decoration: none;
+}
+
+.tariff-wrap {
+  .tariff {
+    position: relative;
+    height: 100%;
+    padding-bottom: 0;
+    margin-bottom: 0;
+    box-shadow: $boxShadow;
+    border-bottom: $borderBottom;
+    background: #fff;
+    margin-right: $flexBoxRight;
+    &:not(.tariff-item) {
+      padding-left: 15px;
+    }
+    &.tariff-item {
+      padding-left: 15px;
+      .tariff-info {
+        padding: 0;
+        .prices {
+          border: none;
+        }
+      }
+    }
+    .group-name {
+      a, div {
+        display: block;
+        color: $green;
+        text-decoration: none;
+        font-size: $font-size;
+        border-bottom: $borderBottom;
+        border-width: 0.01em;
+        padding: 8px 0;
+        font-weight: bold;
+      }
+    }
+    .tariff-info {
+      padding: 10px 0;
+      position: relative;
+      .speed {
+        color: white;
+        background: #ddd;
+        display: inline-block;
+        margin-left: -15px;
+        padding: 5px 10px 5px 20px;
+        &.speed50 {
+          background: #716042;
+        }
+        &.speed100 {
+          background: #0075D5;
+        }
+        &.speed200 {
+          background: #EC4817;
+        }
+      }
+      .prices {
+        padding: 10px 0;
+        padding-bottom: 0;
+        color: #494949;
+        font-weight: bold;
+        .free {
+          margin-top: 5px;
+          font-size: 0.7rem;
+          font-weight: normal;
+        }
+      }
+
+      .skidka {
+        color: #494949;
+        padding-bottom: 5px;
+        font-size: 0.8rem;
+        &.gray {
+          color: #a8a8a8;
+          border-bottom: $borderBottom;
+          border-width: 0.01em;
+          margin-bottom: 8px;
+        }
+      }
+      &:not(.detail):after {
+        content: "\203A";
+        position: absolute;
+        right: 10px;
+        top: 33%;
+        font-size: 1.3rem;
+        color: #C9C9CE;
+      }
+      &.detail {
+        margin-bottom: 5px;
+        .button-wrap {
+          padding-right: 10px;
+          .button {
+            cursor: pointer;
+            display: block;
+            background: $green;
+            color: white;
+            border: none;
+            padding: 10px;
+            width: 100%;
+          }
+        }
+
+      }
+    }
+    .link {
+      border-top: $borderBottom;
+      border-width: 0.01em;
+      bottom: 0;
+      padding: 5px 0;
+      a {
+        color: cornflowerblue;
+        font-size: 0.7rem;
+        text-decoration: none;
+      }
+      &:not(.ph) {
+        position: absolute;
+        width: calc(100% - 15px);
+      }
+      &.ph {
+        visibility: hidden;
+      }
+    }
+  }
+
+}
+
+.results {
+  display: flex;
+  flex-wrap: wrap;
+}
+
+.tariff-wrap {
+  position: relative;
+  margin-bottom: 15px;
+
+  max-width: 33.3%;
+  flex: 0 0 33.3%;
+}
+
+@include respond-to(handhelds) {
+  .tariff-wrap {
+    max-width: 100%;
+    flex: 0 0 100%;
+    .holder {
+      display: none;
+    }
+    &:nth-child(even) {
+      .tariff {
+        margin-right: 0;
+      }
+    }
+    .tariff {
+      margin-right: 0;
+    }
+  }
+}
+
+@include respond-to(wide-screens) {
+  .tariff-wrap {
+    max-width: 25%;
+    flex: 0 0 25%;
+    &:nth-child(4n) {
+      .tariff {
+        margin-right: 0;
+      }
+    }
+  }
+}
+
+@include respond-to(xwide-screens) {
+  .tariff-wrap {
+    max-width: 20%;
+    flex: 0 0 20%;
+    &:nth-child(4n) {
+      .tariff {
+        margin-right: $flexBoxRight;
+      }
+    }
+    &:nth-child(5n) {
+      .tariff {
+        margin-right: 0;
+      }
+    }
+  }
+}
+
+@include respond-to(xmedium-screens) {
+  .tariff-wrap {
+    max-width: 50%;
+    flex: 0 0 50%;
+    &:nth-child(2n) {
+      .tariff {
+        margin-right: 0;
+      }
+    }
+  }
+}
+
+@include respond-to(medium-screens) {
+  .tariff-wrap {
+    max-width: 33.3%;
+    flex: 0 0 33.3%;
+    &:nth-child(3n) {
+      .tariff {
+        margin-right: 0;
+      }
+    }
+  }
+}
