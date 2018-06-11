@@ -13,4 +13,4 @@ start dev:
 `$ npm run start`
 
 ## Demo
-safiullin.io/tariffs
+http://safiullin.io/tariffs
