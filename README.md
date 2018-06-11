@@ -1,4 +1,4 @@
-# sknt tariffs
+# simple tariffs
 
 ## Installation
 `$ npm i`
