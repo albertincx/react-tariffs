@@ -14,5 +14,3 @@ start dev:
 
 ## Demo
 http://safiullin.io/tariffs
-or
-http://tmid.ru/go.php?cat=sknt
